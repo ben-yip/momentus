@@ -14,8 +14,9 @@
 - 注意鼠标滚轮的动作只会对y轴坐标起效。
 
 # Install
-run `npm install --save jquery momentus`  
-**Note:** jQuery is required.
+run `npm install --save momentus`
+
+**Note:** jQuery is required and it's installed as a dependency.
 
 # API and usage
 ```javascript
