@@ -1,8 +1,7 @@
 /**
  * A velocity/momentum event dispatcher for jQuery
  *
- * A Pen created at CodePen.io. You can find this one at https://codepen.io/Aldlevine/pen/yCrbA.
- *
+ * https://github.com/ben-yip/momentus
  */
 jQuery.fn.momentus = function (cfg) {
 
