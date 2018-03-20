@@ -73,15 +73,15 @@ $('body').momentus({
 ```
 
 # Examples
-Before checking out the examples in the repo, clone then run npm install. 
+Before checking out the examples in the repo, clone then run `npm install`. 
 #### more examples
 - [jQuery.momentus](https://codepen.io/Aldlevine/pen/yCrbA)
 - [Price is Right Wheel - Better Inertia](https://codepen.io/Aldlevine/pen/yGLqd)
 - [Custom Scroll with Momentum and Parallax](https://codepen.io/Aldlevine/pen/Jowke)
 
 # Copyright 
-This plugin is originally written by [Aaron Levine](https://codepen.io/Aldlevine/), on Fri, 12/08/2017.  
-Since it can neither be found on Github nor NPM, I reckon it's good to share this great piece of code on these platforms.  
-Amendments might be made to this plugin in the future.
+- This plugin is originally written by [Aaron Levine](https://codepen.io/Aldlevine/), on Fri, 12/08/2017.  
+- Since it can neither be found on Github nor NPM, I reckon it's good to share this great piece of code on these platforms.  
+- Amendments might be made to this plugin in the future.
  
  
