@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .square {
+            box-sizing: border-box;
+            position: absolute;
+            left: -10000px;
+            top: -10000px;
+            display: inline-block;
+            width: 20000px;
+            height: 20000px;
+            background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjEwMCUiIGN5PSI1MCUiIHI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPjxzdG9wIG9mZnNldD0iMzQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjAlIiBjeT0iNTAlIiByPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjM0JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjM1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g') 0 -50px;
+            background: -moz-radial-gradient(100% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)), -moz-radial-gradient(0% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)) 0 -50px;
+            background: -webkit-radial-gradient(100% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)), -webkit-radial-gradient(0% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)) 0 -50px;
+            background: radial-gradient(circle at 100% 50%, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)), radial-gradient(circle at 0% 50%, rgba(0, 0, 0, 0) 20%, rgba(255, 255, 255, 0.1) 21%, rgba(255, 255, 255, 0.1) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0)) 0 -50px;
+            background-size: 330px 112px;
+        }
+
+        .square2 {
+            box-sizing: border-box;
+            position: absolute;
+            left: -5000px;
+            top: -5000px;
+            display: inline-block;
+            width: 10000px;
+            height: 10000px;
+            background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIyMSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PHN0b3Agb2Zmc2V0PSIzNCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PHN0b3Agb2Zmc2V0PSIzNSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+            background: -moz-radial-gradient(50% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0));
+            background: -webkit-radial-gradient(50% 50%, circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0));
+            background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.3) 21%, rgba(0, 0, 0, 0.3) 34%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0));
+            background-size: 200px 200px;
+        }
+
+        .display {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: inline-block;
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: #1c1c1c;
+            color: #fff;
+            overflow: hidden;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="square"></div>
+<div class="square2"></div>
+<div class="display">
+    <h1>jQuery.momentus <br> a Velocity and Momentum Plugin</h1>
+    <p>Drag / Scroll</p>
+    <div>
+        <div>coordinates:</div>
+        <div> x: <span id="cx">0</span></div>
+        <div> y: <span id="cy">0</span></div>
+    </div>
+    <br>
+    <div>
+        <div>velocity:</div>
+        <div> x: <span id="vx">0</span></div>
+        <div> y: <span id="vy">0</span></div>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="jquery.momentus.js"></script>
+<script>
+    $('body').momentus({
+        u: 3,
+        wheelRatio: 1000,
+        onChange: function (coords, velocity) {
+            $('.square').css({
+                left: coords.x - 10000, //minus the original starting point
+                top: coords.y - 10000
+            });
+            $('.square2').css({
+                left: coords.x / 2 - 5000, //minus the original starting point
+                top: coords.y / 2 - 5000
+            });
+            $('#cx').text(coords.x.toFixed(2));
+            $('#cy').text(coords.y.toFixed(2));
+            $('#vx').text(velocity.x.toFixed(2));
+            $('#vy').text(velocity.y.toFixed(2));
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "momentus",
+  "version": "1.0.0",
+  "description": "A velocity/momentum event dispatcher for jQuery",
+  "main": "jquery.momentus.js",
+  "dependencies": {
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {},
+  "author": "BenYip",
+  "license": "MIT"
+}

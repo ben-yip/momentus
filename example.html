@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>momentus example</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: lightgoldenrodyellow;
+        }
+
+        body {
+            font-size: 30px;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div style="padding: 20px;">
+    <code>jquery.momentus</code> monitors mouse-wheel, mouse-drag and swipe(on touch screen) gestures, along with
+    momentum effects.
+</div>
+<div>
+    <p>coordinates:</p>
+    <p> x: <span id="cx">0</span></p>
+    <p> y: <span id="cy">0</span></p>
+</div>
+<div>
+    <p>velocity:</p>
+    <p> x: <span id="vx">0</span></p>
+    <p> y: <span id="vy">0</span></p>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="jquery.momentus.js"></script>
+<script>
+    $('body').momentus({
+        mass: 1000, // 质量越大，惯性越大，默认1000
+        u: 10,      // 摩擦系数，默认4
+        wheel_ratio: 1000, // 滚轮灵敏度，默认1000
+        mouse_ratio: 1,   // 鼠标灵敏度，默认20
+        touch_ratio: 1,    // 触摸灵敏度，默认1
+
+        onChange: function (coordinates, velocity) {
+            // console.log(coordinates);
+            // console.log(velocity);
+            // console.log('==========');
+
+            $('#cx').text(coordinates.x.toFixed(8));
+            $('#cy').text(coordinates.y.toFixed(8));
+            $('#vx').text(velocity.x.toFixed(6));
+            $('#vy').text(velocity.y.toFixed(6));
+        }
+    });
+</script>
+</body>
+</html>
